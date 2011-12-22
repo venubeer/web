@@ -15,7 +15,7 @@ Ext.setup({
 });
 
 Ext.namespace('synchronicity.app.properties');
-synchronicity.app.properties.baseUrl=window.location.protocol+'//'+window.location.host+'/blink';
+synchronicity.ap.properties.baseUrl=window.location.protocol+'//'+window.location.host+'/blink';
 synchronicity.app.properties.loginUrl=window.location.protocol+'//'+window.location.host+'/blink/j_security_check';
 synchronicity.app.properties.logoffUrl=window.location.protocol+'//'+window.location.host+'/blink/auth/logoff';
 synchronicity.app.properties.baseSiebelDataUrl=window.location.protocol+'//'+window.location.host+'/blink/data/siebel/';
