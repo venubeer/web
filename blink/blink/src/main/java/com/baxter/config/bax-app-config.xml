@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<app name="ssor" type="web">
+
+	<server system-property="BAX_SERVER_TYPE" system-value="dev">
+	
+		<query-finder>
+			<cache value="false" />
+		</query-finder>	
+	
+		<log-factory type="console" format="terse" level="error">
+			<logger name="com.baxter.common" level="error" />
+		</log-factory>
+	
+		<database name="mdcrm">
+			<jdbc-url value="java:comp/env/jdbc/USMDCRM"/>
+			<properties>
+				<property name="log.client.info" value="false" />
+				<property name="sbl.connect.string" value="siebel.tcpip.none.none://tbaxhpa8001.baxter.com:2321/MDTST_ENT/eMedicalObjMgr_enu_ADSI_TSTG" />
+				<property name="sbl.lang" value="ENU" />
+			</properties>
+		</database>	
+		
+	</server>
+	
+	<server system-property="BAX_SERVER_TYPE" system-value="stage">
+	
+		<query-finder>
+			<cache value="false" />
+		</query-finder>	
+	
+		<log-factory type="console" format="terse" level="error">
+		</log-factory>
+	
+		<database name="mdcrm">
+			<jdbc-url value="java:comp/env/jdbc/USMDCRM"/>
+			<properties>
+				<property name="log.client.info" value="false" />
+			</properties>
+		</database>	
+		
+	</server>
+	
+	<server system-property="BAX_SERVER_TYPE" system-value="prod">
+	
+		<query-finder>
+			<cache value="false" />
+		</query-finder>	
+	
+		<log-factory type="console" format="terse" level="error">
+		</log-factory>
+	
+		<database name="mdcrm">
+			<jdbc-url value="java:comp/env/jdbc/USMDCRM"/>
+			<properties>
+				<property name="log.client.info" value="false" />
+			</properties>
+		</database>	
+		
+	</server>
+</app>

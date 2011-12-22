@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-modules id="moduleCoreId" project-version="1.5.0">
+	<wb-module deploy-name="blink">
+        <wb-resource deploy-path="/" source-path="/src/main/webapp"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/java"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/resources"/>
+        <dependent-module archiveName="SiebelJI_enu.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/blink/SiebelJI_enu.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="common-utilities-v2.0.1.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/blink/common-utilities-v2.0.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="Siebel.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/blink/Siebel.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="ojdbc14.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/blink/ojdbc14.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="Siebel_JCA.rar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/blink/Siebel_JCA.rar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+		<property name="java-output-path" value="target/classes"/>
+		<property name="context-root" value="blink"/>
+	</wb-module>
+</project-modules>

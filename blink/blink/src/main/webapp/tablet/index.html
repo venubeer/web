@@ -1,0 +1,118 @@
+<!DOCTYPE html> 
+<html manifest="blink.manifes">
+	<head> 
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"> 
+		<title>Synchronicity</title> 
+
+
+		<link href="resources/css/sencha-touch.css" rel="stylesheet" type="text/css" />
+		<link href="resources/css/blink.css" rel="stylesheet" type="text/css" /> 
+		
+		
+		<script src="lib/framework/sencha-touch.js" type="text/javascript"></script> 
+		<script src="index.js" type="text/javascript"></script> 
+		
+		<script src="app/utils/Pops.js" type="text/javascript"></script>
+		<script src="app/utils/ListPagingPlugin.js" type="text/javascript"></script>
+		<script src="app/utils/DataInitializer.js" type="text/javascript"></script>	
+		<script src="app/utils/CustomComponents.js" type="text/javascript"></script>
+		
+		
+		<script src="app/models/Settings.js" type="text/javascript"></script>
+		<script src="app/models/Alert.js" type="text/javascript"></script>
+		<script src="app/models/Navigation.js" type="text/javascript"></script>
+		<script src="app/models/Transaction.js" type="text/javascript"></script>
+		
+		<script src="app/models/TransientActivity.js" type="text/javascript"></script>
+		<script src="app/models/TransientAccount.js" type="text/javascript"></script>
+		<script src="app/models/TransientContact.js" type="text/javascript"></script>
+		<script src="app/models/TransientOpportunity.js" type="text/javascript"></script>
+		<script src="app/models/TransientProduct.js" type="text/javascript"></script>
+		<script src="app/models/TransientListOfValue.js" type="text/javascript"></script>
+		<script src="app/models/TransientRevenue.js" type="text/javascript"></script>
+		<script src="app/models/Transaction.js" type="text/javascript"></script>
+		
+		<script src="app/models/PersistentActivity.js" type="text/javascript"></script>
+		<script src="app/models/PersistentAccount.js" type="text/javascript"></script>
+		<script src="app/models/PersistentContact.js" type="text/javascript"></script>
+		<script src="app/models/PersistentOpportunity.js" type="text/javascript"></script>
+		<script src="app/models/PersistentProduct.js" type="text/javascript"></script>
+		<script src="app/models/PersistentListOfValue.js" type="text/javascript"></script>
+		<script src="app/models/PersistentRevenue.js" type="text/javascript"></script>
+				
+		
+		<script src="app/stores/Settings.js" type="text/javascript"></script>
+		<script src="app/stores/Alert.js" type="text/javascript"></script>
+		<script src="app/stores/Report.js" type="text/javascript"></script>
+		<script src="app/stores/Transaction.js" type="text/javascript"></script>
+		
+		<script src="app/stores/TransientActivity.js" type="text/javascript"></script>
+		<script src="app/stores/TransientAccount.js" type="text/javascript"></script>
+		<script src="app/stores/TransientContact.js" type="text/javascript"></script>
+		<script src="app/stores/TransientOpportunity.js" type="text/javascript"></script>
+		<script src="app/stores/TransientProduct.js" type="text/javascript"></script>
+		<script src="app/stores/TransientListOfValue.js" type="text/javascript"></script>
+		<script src="app/stores/TransientRevenue.js" type="text/javascript"></script>
+		
+		<script src="app/stores/PersistentActivity.js" type="text/javascript"></script>
+		<script src="app/stores/PersistentAccount.js" type="text/javascript"></script>
+		<script src="app/stores/PersistentContact.js" type="text/javascript"></script>
+		<script src="app/stores/PersistentOpportunity.js" type="text/javascript"></script>
+		<script src="app/stores/PersistentProduct.js" type="text/javascript"></script>
+		<script src="app/stores/PersistentListOfValue.js" type="text/javascript"></script>
+		<script src="app/stores/PersistentRevenue.js" type="text/javascript"></script>
+		
+		
+		<script src="app/views/Home/Home.js" type="text/javascript"></script>
+		<script src="app/views/Home/AlertDetail.js" type="text/javascript"></script>
+		<script src="app/views/Settings/Settings.js" type="text/javascript"></script>
+		<script src="app/views/Accounts/AccountList.js" type="text/javascript"></script>
+		<script src="app/views/Contacts/ContactList.js" type="text/javascript"></script>
+		<script src="app/views/Opportunities/OpportunityList.js" type="text/javascript"></script>
+		<script src="app/views/Activities/ActivityList.js" type="text/javascript"></script>
+		<script src="app/views/Activities/ActivityForm.js" type="text/javascript"></script>
+		<script src="app/views/Login.js" type="text/javascript"></script>
+		<script src="app/views/Viewport.js" type="text/javascript"></script> 
+		<script src="app/views/Accounts/AccountContact.js" type="text/javascript"></script>
+		<script src="app/views/Accounts/AccountActivity.js" type="text/javascript"></script>
+		<script src="app/views/Accounts/AccountOpportunity.js" type="text/javascript"></script>
+		<script src="app/views/Accounts/AccountDetail.js" type="text/javascript"></script>	
+		<script src="app/views/Accounts/AccountForm.js" type="text/javascript"></script>	
+		<script src="app/views/Contacts/ContactAccount.js" type="text/javascript"></script>
+		<script src="app/views/Contacts/ContactActivity.js" type="text/javascript"></script>
+		<script src="app/views/Contacts/ContactOpportunity.js" type="text/javascript"></script>
+		<script src="app/views/Contacts/ContactDetail.js" type="text/javascript"></script>
+		<script src="app/views/Contacts/ContactForm.js" type="text/javascript"></script>
+		<script src="app/views/Opportunities/OpportunityContact.js" type="text/javascript"></script>
+		<script src="app/views/Opportunities/OpportunityActivity.js" type="text/javascript"></script>
+		<script src="app/views/Opportunities/OpportunityRevenue.js" type="text/javascript"></script>
+		<script src="app/views/Opportunities/OpportunityDetail.js" type="text/javascript"></script>
+		<script src="app/views/Opportunities/OpportunityForm.js" type="text/javascript"></script>
+		<script src="app/views/Opportunities/RevenueForm.js" type="text/javascript"></script>
+		<script src="app/views/Reports/ReportList.js" type="text/javascript"></script>
+		<script src="app/views/Reports/ReportPanel.js" type="text/javascript"></script>
+		
+		<script src="app/utils/InitializePages.js" type="text/javascript"></script>
+		
+		<script src="app/stores/Navigation.js" type="text/javascript"></script>	
+ 		<script src="app/views/Main.js" type="text/javascript"></script> 		
+ 
+		<script src="app/controllers/Login.js" type="text/javascript"></script>
+		<script src="app/controllers/Home.js" type="text/javascript"></script>
+		<script src="app/controllers/Settings.js" type="text/javascript"></script>
+		<script src="app/controllers/Account.js" type="text/javascript"></script>
+		<script src="app/controllers/Contact.js" type="text/javascript"></script>
+		<script src="app/controllers/Opportunity.js" type="text/javascript"></script>
+		<script src="app/controllers/Activity.js" type="text/javascript"></script>
+		<script src="app/controllers/Transaction.js" type="text/javascript"></script>
+		
+		<script type="text/javascript">
+			if (window.location.search.indexOf('autoAuthenticate')  > -1) {
+				synchronicity.app.properties.autoAuthenticate = true;
+			}
+		</script>
+		
+	</head> 
+<body>
+</body> 
+</html>
